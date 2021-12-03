@@ -8,8 +8,8 @@ window.addEventListener("resize", responsive);
 
 function responsive() {
     canvas.replaceChildren();
-    width = window.innerWidth;
-    height = window.innerHeight;
+    width = document.documentElement.clientWidth;
+    height = document.documentElement.clientHeight;
     if (width > height) {
         rows = 5;
         gridSize = Math.floor(height/rows);
